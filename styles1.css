@@ -1,0 +1,206 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+video.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Estiliza o corpo da página */
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+  margin-top: 3vw;
+  font-size: 2.5rem;
+  color: #e3e6ec;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+/* Estiliza as seções da página */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+  width: 30rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  color: #45474b;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+/* Estiliza o menu de autocomplete */
+
+/* Estiliza os itens do menu */
+.ui-menu-item {
+  color: #e3e6ec; /* Cor do texto dos itens */
+  padding: 0.5em; /* Espaçamento interno dos itens */
+}
+
+section button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: rgba(48, 71, 94, 0.5);
+  color: #f5f7f8;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+  background-color: rgba(48, 71, 94, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultados-pesquisa {
+  width: 60rem;
+  height: 60vh;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  padding: 1.5rem; /* Aumentar o padding interno para evitar cortes */
+  border-radius: 0.6rem;
+  background-color: rgba(
+    48,
+    71,
+    94,
+    0.1
+  ); /* Cor de fundo da caixa de resultados */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhar o conteúdo ao início, não ao centro */
+  justify-content: flex-start; /* Garantir que o conteúdo comece no topo */
+}
+
+.resultados-pesquisa::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background-color: rgba(252, 253, 255, 0.1);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: -1rem;
+  box-shadow: 0 2px 4px rgba(243, 238, 238, 0.1);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+
+.resultados-pesquisa {
+  font-size: 1rem;
+  color: #e3e6ec;
+}
+.item-resultado h2 {
+  font-size: 1.5rem;
+  color: #e3e6ec;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none;
+  color: #e3e6ec;
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+  text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  color: #e3e6ec;
+  margin: 0.5rem 0;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  background-color: rgba(48, 71, 94, 0.1);
+  color: #e3e6ec;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  section input {
+    width: 25rem;
+    padding: 0.8rem;
+  }
+
+  .resultados-pesquisa {
+    width: 40rem;
+    height: 40vh;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  section input {
+    width: 17rem;
+  }
+
+  section button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .resultados-pesquisa {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}

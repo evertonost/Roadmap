@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles1.css" />
+    <title>Roadmap de Programação</title>
+  </head>
+  <body>
+    <video class="background-video" autoplay loop muted playsinline>
+      <source src="backgroud.mp4" type="video/mp4" />
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <header>
+      <h1>Roadmap de Programação</h1>
+    </header>
+    <main>
+      <select id="language-selector" onchange="changeLanguage()">
+        <option value="">Selecione a Linguagem</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="c">C</option>
+        <option value="csharp">C #</option>
+        <option value="ruby">Ruby</option>
+        <option value="php">PHP</option>
+        <option value="swift">Swift</option>
+        <option value="rust">Rust</option>
+        <option value="go">GO</option>
+        <option value="kotlin">Kotlin</option>
+        <option value="sql">SQL</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </select>
+
+      <!-- Seção onde o conteúdo vai mudar -->
+      <section class="resultados-pesquisa" id="resultado-pesquisa">
+        <h2></h2>
+        <ul>
+          <li><strong></strong></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Entre em contato pelo email: everton.ost@gmail.com</p>
+    </footer>
+
+    <!-- Seus arquivos de JavaScript -->
+    <script src="dadosroadmap.js"></script>
+    <script src="approadmap.js"></script>
+  </body>
+</html>
